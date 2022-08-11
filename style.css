@@ -596,7 +596,7 @@ nav {
     }
 
     .category .gap-5 {
-        margin: 2rem 0rem;
+        margin-bottom: 2.5rem !important;
     }
 
     .category .col-sm-3 h2 {
