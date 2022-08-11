@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --bg: #000000;
+    --bg2: #191919;
+    --clr1: #25AB75;
+    --clr2: #FFE642;
+    --clr3: #FB1351;
+    --text-clr: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-clr);
+}
+
+nav {
+    color: var(--bg) !important;
+    padding: 3rem 6rem !important;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+    color: var(--text-clr);
+}
+
+.new {
+    width: 22rem;
+    border-radius: 20px;
+}
+
+.new span {
+    background-color: var(--clr1);
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link:hover {
+    color: var(--clr3) !important;
+}
+
+.main-container {
+    padding: 0rem 6rem;
+    width: 100%;
+}
+.hero{
+    padding: 1rem 0rem 10rem 0rem;
+}
+.banner-heading h1 {
+    font-size: 10rem;
+    line-height: 8rem;
+}
+
+.heading-2 {
+    width: 28rem;
+}
+
+.main-container p {
+    font-size: .8rem;
+}
+
+.timeandcal div {
+    border-radius: 20px;
+}
+
+.ui-btn button {
+    color: var(--text-clr);
+    padding: .8rem 2rem;
+    width: 10rem;
+}
+.ui-btn .gs {
+    background-color: var(--clr1);
+}
+
+.ui-btn .pr {
+    background-color: var(--bg2);
+}
+.category .cards {
+    border-radius: 20px;
+}
+
+.cards img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards .d-flex {
+    bottom: -2rem;
+}
+
+.footer {
+    padding: 4rem 0rem;
+}
+
+.footer .mb-5 {
+    letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .main-container {
+        padding: 0rem 4rem;
+    }
+    nav {
+        padding: 3rem 3rem !important;
+    }
+    .hero{
+        padding: 1rem 0rem 5rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .footer .col-3 {
+        width: 35%;
+    }
+    .footer .col-auto p {
+        font-size: .6rem;
+        margin-bottom: 3rem !important;
+    }
+    .footer .col-3 p {
+        font-size: .5rem;
+    }
+    .navbar-collapse {
+        background-color: var(--bg2) !important;
+    }
+    .navbar-nav{
+        text-align: center !important;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+    .navbar-nav .nav-link{
+        margin: 1rem 0rem !important;
+    }
+    .bx-menu{
+        font-size: 3rem;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+
+    }
+    .navbar-toggler {
+        padding: 0rem !important; 
+   }
+}
+
+@media only screen and (max-width:850px) {
+  
+    .main-container {
+        padding: 0rem 3rem;
+    }
+    .footer .col-3 {
+        width: 30%;
+    }
+    .timeandcal{
+        margin: 2rem 0rem;
+        flex-direction: row !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        padding: 2rem 2rem !important;
+    }
+    .banner-heading h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .footer .col-3 p {
+        font-size: .3rem;
+    }
+
+    .footer .col-auto p {
+        font-size: .45rem;
+        letter-spacing: 1px;
+        margin-bottom: 2rem !important;
+    }
+    .footer {
+        padding: 1rem 0rem;
+    }
+    .timeandcal{
+        margin: 1.5rem 0rem 1rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    nav {
+        padding: 1rem  !important;
+    }
+    .navbar .container-fluid{
+        padding: 0rem !important;
+    }
+    .bx-menu{
+        font-size: 2rem;
+    }
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+    .ui-btn button {
+        padding: 0.6rem 1rem;
+        width: 8rem;
+        font-size: .8rem;
+    }
+   
+    .new {
+        width: 16rem;
+    }
+    .hero .rounded-pill{
+        font-size: .8rem;
+        padding: .15rem .5rem !important;
+        margin-right: .5rem !important;
+    }
+    .main-container {
+        padding: 0rem 1rem;
+    }
+    .banner-heading h1 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    
+    .main-container p {
+        font-size: .6rem;
+    }
+    .heading-2 {
+        width: 10rem;
+    }
+    .footer .col-3 h2{
+        font-size: .8rem;
+    }
+    .footer .col-auto p {
+        font-size: .3rem;
+        margin-bottom: 1.5rem !important;
+    }
+
+    
+}
