@@ -58,12 +58,28 @@ nav {
 }
 
 .main-container {
-    padding: 0rem 6rem;
+    padding: 0rem 7rem;
     width: 100%;
 }
-.hero{
-    padding: 1rem 0rem 10rem 0rem;
+.get-started{
+  padding: 4rem 7rem;
 }
+.get-started h1{
+    font-size: 5rem;
+}
+.get-started .ui-btn h5{
+    font-weight: 200;
+}
+.get-started .my-patch{
+    background-image: url(./assets/patch.png) ;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero {
+    margin: 1rem 0rem 10rem 0rem;
+}
+
 .banner-heading h1 {
     font-size: 10rem;
     line-height: 8rem;
@@ -86,6 +102,7 @@ nav {
     padding: .8rem 2rem;
     width: 10rem;
 }
+
 .ui-btn .gs {
     background-color: var(--clr1);
 }
@@ -93,22 +110,57 @@ nav {
 .ui-btn .pr {
     background-color: var(--bg2);
 }
-.category .cards {
-    border-radius: 20px;
+
+
+.category .col-sm-3 .position-absolute {
+    width: 100%;
+    bottom: -3.5rem;
 }
 
-.cards img {
-    border-radius: 20px;
+.category .col-sm-3 .position-absolute .d-flex {
+    background: linear-gradient(rgba(16, 0, 0, 0), 15%, rgba(0, 0, 0, 0.849), black);
+
+}
+
+.category .col-sm-3 .position-absolute h5 {
+    background-color: var(--bg);
+    border-radius: 15px 0px 0px 15px;
+    padding: .4rem 1rem;
+}
+
+.category .d-flex img {
     width: 100%;
+    border-radius: 20px;
     object-fit: cover;
 }
 
-.cards .d-flex {
-    bottom: -2rem;
+.category .gap-5 {
+    margin: 2rem 0rem 5rem;
 }
 
+.category .col-sm-3 p,
+.trainer p {
+    color: #949393;
+}
+.trainer{
+    padding: 0rem 0rem 5rem 0rem;
+}
+.trainer-img{
+    height: 20rem;
+    object-fit: cover;
+
+}
+.trainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trainer .col-4{
+    height: 20rem;
+}
 .footer {
-    padding: 4rem 0rem;
+    margin: 4rem 0rem;
 }
 
 .footer .mb-5 {
@@ -120,11 +172,29 @@ nav {
     .main-container {
         padding: 0rem 4rem;
     }
+
     nav {
         padding: 3rem 3rem !important;
     }
-    .hero{
-        padding: 1rem 0rem 5rem 0rem;
+
+    .category .col-sm-3 h2 {
+        font-size: 1.5rem;
+    }
+
+    .category .col-sm-3 h5 {
+        font-size: 1rem;
+    }
+
+    .category .col-sm-3 p {
+        font-size: .7rem;
+        font-weight: 200;
+    }
+
+    .category .col-sm-3 {
+        width: 30%;
+    }
+    .trainer-img {
+        height: 15rem;
     }
 }
 
@@ -133,47 +203,90 @@ nav {
     .footer .col-3 {
         width: 35%;
     }
+
     .footer .col-auto p {
         font-size: .6rem;
         margin-bottom: 3rem !important;
     }
+
     .footer .col-3 p {
-        font-size: .5rem;
+        font-size: .8rem;
     }
+
     .navbar-collapse {
         background-color: var(--bg2) !important;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         text-align: center !important;
         padding: 0rem 2rem 0rem 0rem;
     }
-    .navbar-nav .nav-link{
+
+    .navbar-nav .nav-link {
         margin: 1rem 0rem !important;
     }
-    .bx-menu{
+
+    .bx-menu {
         font-size: 3rem;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: 2rem;
 
     }
+
     .navbar-toggler {
-        padding: 0rem !important; 
-   }
+        padding: 0rem !important;
+    }
+
+    .category .gap-5 {
+        gap: 2rem !important;
+    }
+    .get-started {
+        padding: 3rem 5rem;
+    }
+    .get-started .col-4{
+        width: 40%;
+    }
+    .trainer-img {
+        height: 12rem;
+    }
+
 }
 
 @media only screen and (max-width:850px) {
-  
+
+
     .main-container {
         padding: 0rem 3rem;
     }
+
     .footer .col-3 {
         width: 30%;
     }
-    .timeandcal{
+
+    .timeandcal {
         margin: 2rem 0rem;
         flex-direction: row !important;
     }
+    .get-started {
+        padding: 2rem 3rem;
+    }
+    .get-started .col-4 h5{
+       font-size: 1rem;
+    }
+    .trainer-img {
+        height: 10rem;
+    }
+    .tr{
+        font-size: 1rem;
+    }
+    .trainer p{
+        font-size: .8rem;
+        color: #949393;
+    }
+    
+
 }
 
 
@@ -183,75 +296,169 @@ nav {
     nav {
         padding: 2rem 2rem !important;
     }
+
     .banner-heading h1 {
         font-size: 6rem;
         line-height: 6rem;
     }
-    .footer .col-3 p {
-        font-size: .3rem;
+
+    .footer .col-3 p,
+    .category .justify-content-between p {
+        font-size: .5rem;
     }
 
     .footer .col-auto p {
-        font-size: .45rem;
-        letter-spacing: 1px;
+        font-size: .5rem;
+        letter-spacing: .5px;
         margin-bottom: 2rem !important;
     }
+
     .footer {
-        padding: 1rem 0rem;
+        padding: 1rem 3rem;
+        margin: 1rem 0rem;
     }
-    .timeandcal{
-        margin: 1rem 0rem ;
+
+    .timeandcal {
+        margin: 1rem 0rem;
     }
+
+    .category .gap-5 {
+        gap: .5rem !important;
+    }
+
+    .category .col-sm-3 h2 {
+        font-size: .8rem;
+    }
+
+    .category .col-sm-3 .position-absolute h5 {
+        border-radius: 5px 0px 0px 5px;
+        font-size: .5rem;
+        padding: 0.2rem .5rem;
+    }
+
+    .category .col-sm-3 p {
+        font-size: .4rem;
+    }
+
+    .category .d-flex img {
+        border-radius: 10px;
+    }
+
+    .category .gap-5 {
+        margin: 2rem 0rem 3rem;
+    }
+
+    .category .col-sm-3 .position-absolute {
+        width: 100%;
+        bottom: -2rem;
+    }
+    .category .justify-content-between h2{
+        font-size: 1rem;
+    }
+    .get-started {
+        padding: 2rem ;
+    }
+    .get-started h1 {
+        font-size: 3rem;
+    }
+    .trainer-img {
+        height: 6rem;
+    }
+    .trainer .text-center{
+        padding: .5rem 0rem !important;
+    }
+    .tr {
+        font-size: .5rem;
+    }
+    .trainer p {
+        font-size: .4rem;
+    }
+   
 }
 
 @media only screen and (max-width: 450px) {
     nav {
-        padding: 1rem  !important;
+        padding: 1rem !important;
     }
-    .navbar .container-fluid{
+
+    .navbar .container-fluid {
         padding: 0rem !important;
     }
-    .bx-menu{
+
+    .bx-menu {
         font-size: 2rem;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: 1.5rem;
     }
+
     .ui-btn button {
         padding: 0.6rem 1rem;
         width: 8rem;
         font-size: .8rem;
     }
-   
+
     .new {
         width: 18rem;
     }
-    .hero .rounded-pill{
+
+    .hero .rounded-pill {
         font-size: .8rem;
         padding: .15rem .5rem !important;
         margin-right: .5rem !important;
     }
+
     .main-container {
         padding: 0rem 1rem;
     }
+
     .banner-heading h1 {
         font-size: 5rem;
         line-height: 4rem;
     }
-    
+
     .main-container p {
         font-size: .7rem;
     }
+
     .heading-2 {
         width: 18rem;
     }
-    .footer .col-3 h2{
-        font-size: .8rem;
+    .category .gap-5 {
+        margin: 2.5rem 0rem ;
     }
-    .footer .col-auto p {
-        font-size: .3rem;
-        margin-bottom: 1.5rem !important;
+    .category .col-sm-3 h2 {
+        font-size: .6rem;
+        padding: 0rem 0rem .3rem 0rem !important;
+    }
+    .get-started {
+        padding: 1rem;
+    }
+    .get-started h1 {
+        font-size: 2rem;
+    }
+    .get-started .col-4 h5 {
+        font-size: .6rem;
+    }
+     .get-started .col-4 button{
+        padding: 0.3rem 0.5rem;
+        width: 6rem;
+        margin-top: 1rem !important;
+        font-size: .7rem;
+     }
+    .footer .col-3 {
+        width: 38%;
     }
 
-    
+    .footer .col-3 h2 {
+        font-size: 1rem;
+    }
+
+    .footer .col-auto p {
+        font-size: .5rem;
+        margin-bottom: 1.8rem !important;
+    }
+
+
 }
