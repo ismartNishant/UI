@@ -162,7 +162,7 @@ nav {
 .trainer p,
 .listing h5,
 .listing h2 {
-    color: #949393;
+    color: #bbbbbb;
 }
 
 .trainer {
@@ -451,7 +451,7 @@ nav {
     }
 
     .category .gap-5 {
-        gap: .5rem !important;
+        gap: .3rem !important;
     }
 
     .category .col-sm-3 h2 {
@@ -465,7 +465,7 @@ nav {
     }
 
     .category .col-sm-3 p {
-        font-size: .4rem;
+        font-size: .5rem;
     }
 
     .category .d-flex img {
@@ -588,7 +588,9 @@ nav {
     .main-container p {
         font-size: .7rem;
     }
-
+    .category .col-sm-3 {
+        width: 32%;
+    }
     .heading-2 {
         width: 18rem;
     }
@@ -599,7 +601,7 @@ nav {
 
     .category .col-sm-3 h2 {
         font-size: .6rem;
-        padding: 0rem 0rem .3rem 0rem !important;
+        padding: 0rem 0rem .1rem 0rem !important;
     }
 
     .get-started {
@@ -618,8 +620,8 @@ nav {
         margin-top: .5rem !important;
     }
     .get-started .ui-btn h5 {
-        line-height: 1rem;
-        font-size: .6rem;
+        line-height: .9rem;
+        font-size: .5rem;
     }
     .listing .d-flex h1 {
         font-size: 1.3rem !important;
@@ -629,13 +631,14 @@ nav {
         font-size: .7rem;
     }
     .col-6 {
-        width: 58% !important;
+        width: 60% !important;
     }
-    .get-started .col-4 h5 {
+    .get-started .col-4 h5,
+    .trainer p {
         font-size: .6rem;
     }
     .listing {
-        padding: 1rem 2rem !important;
+        padding: 1rem 1.5rem !important;
     }
     .listing .d-flex {
         padding: 2rem 0rem !important;
