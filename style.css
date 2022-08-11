@@ -31,7 +31,6 @@ nav {
 }
 
 .navbar-toggler:focus {
-
     box-shadow: none;
 }
 
@@ -41,7 +40,7 @@ nav {
 }
 
 .new {
-    width: 22rem;
+    width: 25rem;
     border-radius: 20px;
 }
 
@@ -58,49 +57,50 @@ nav {
 }
 
 .main-container {
-    padding: 0rem 7rem;
+    padding: 7rem;
     width: 100%;
 }
-.get-started{
-  padding: 4rem 7rem;
-}
-.get-started h1{
-    font-size: 5rem;
-}
-.get-started .ui-btn h5{
-    font-weight: 200;
-}
-.get-started .my-patch{
-    background-image: url(./assets/patch.png) ;
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+
 .hero {
     margin: 1rem 0rem 10rem 0rem;
 }
 
 .banner-heading h1 {
-    font-size: 10rem;
-    line-height: 8rem;
+    font-size: 12rem;
+    line-height: 10rem;
 }
 
 .heading-2 {
-    width: 28rem;
+    width: 30rem;
 }
 
-.main-container p {
-    font-size: .8rem;
+.timeandcal img {
+    position: absolute;
+    left: 35%;
+    z-index: -999 !important;
+    top: -15%;
+    width: 50%;
+    height: auto;
 }
 
 .timeandcal div {
     border-radius: 20px;
 }
 
+.timeandcal h1{
+    font-size: 4rem;
+}
 .ui-btn button {
     color: var(--text-clr);
-    padding: .8rem 2rem;
-    width: 10rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 15rem;
+    transition: all .5s ease-in-out;
+}
+
+.ui-btn button:hover {
+    transform: scale(1.1);
+    color: var(--text-clr) !important;
 }
 
 .ui-btn .gs {
@@ -111,6 +111,26 @@ nav {
     background-color: var(--bg2);
 }
 
+.get-started {
+    padding: 4rem 10rem 4rem 10rem;
+}
+
+.get-started h1 {
+    font-size: 7rem;
+}
+
+.get-started .ui-btn h5 {
+    font-weight: 200;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+.get-started .my-patch {
+    background-image: url(./assets/patch.png);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .category .col-sm-3 .position-absolute {
     width: 100%;
@@ -139,26 +159,45 @@ nav {
 }
 
 .category .col-sm-3 p,
-.trainer p {
+.trainer p,
+.listing h5,
+.listing h2 {
     color: #949393;
 }
-.trainer{
+
+.trainer {
     padding: 0rem 0rem 5rem 0rem;
 }
-.trainer-img{
+
+.trainer-img {
     height: 20rem;
     object-fit: cover;
 
 }
-.trainer img{
+
+.trainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.trainer .col-4{
-    height: 20rem;
+
+.listing {
+    padding: 0rem 10rem;
 }
+
+.listing .d-flex h1 {
+    font-size: 3rem !important;
+}
+
+.listing .d-flex h5 {
+    font-weight: 200;
+}
+
+.listing div {
+    border-color: #646464 !important;
+}
+
 .footer {
     margin: 4rem 0rem;
 }
@@ -172,11 +211,26 @@ nav {
     .main-container {
         padding: 0rem 4rem;
     }
-
+    .banner-heading h1 {
+        font-size: 9rem;
+        line-height: 7rem;
+    }
+    .timeandcal img {
+        left: 41%;
+        z-index: -999 !important;
+        top: 2%;
+        width: 60%;
+    }
+    .timeandcal h1 {
+        font-size: 3rem;
+    }
     nav {
         padding: 3rem 3rem !important;
     }
-
+     
+    .category{
+        padding-bottom: 3rem;
+    }
     .category .col-sm-3 h2 {
         font-size: 1.5rem;
     }
@@ -193,8 +247,19 @@ nav {
     .category .col-sm-3 {
         width: 30%;
     }
+
     .trainer-img {
         height: 15rem;
+    }
+    .get-started .ui-btn h5 {
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .get-started h1 {
+        font-size: 6rem;
+    }
+    .get-started {
+        padding: 4rem 5rem 4rem 5rem;
     }
 }
 
@@ -232,9 +297,27 @@ nav {
 
     .navbar-brand {
         font-size: 2rem;
-
     }
 
+    .timeandcal img {
+        left: 38%;
+        top: 2%;
+        width: 70%;
+    }
+    .get-started h1 {
+        font-size: 4.5rem;
+    }
+    .get-started .ui-btn h5 {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+    .trainer {
+        padding: 0rem 0rem 0rem 0rem !important;
+    }
+    .banner-heading h1 {
+        font-size: 8rem;
+        line-height: 6rem;
+    }
     .navbar-toggler {
         padding: 0rem !important;
     }
@@ -242,23 +325,57 @@ nav {
     .category .gap-5 {
         gap: 2rem !important;
     }
+
     .get-started {
-        padding: 3rem 5rem;
+        padding: 2rem 5rem;
     }
-    .get-started .col-4{
+
+    .get-started .col-4 {
         width: 40%;
     }
+
     .trainer-img {
         height: 12rem;
     }
-
+   
+    .listing .d-flex h1{
+        font-size: 2.5rem !important;
+    }
+    .hero {
+        margin: 1rem 0rem 5rem 0rem;
+    }
 }
 
 @media only screen and (max-width:850px) {
 
-
+    .get-started h1 {
+        font-size: 4rem;
+    }
+    .get-started .ui-btn h5 {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    .listing {
+        padding-top: 0rem !important;
+    }
+    .ui-btn button {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        width: 10rem;
+    }
+    .listing .d-flex h1 {
+        font-size: 2rem !important;
+    }
+    .timeandcal img {
+        left: 42%;
+        top: 7%;
+        width: 60%;
+    }
     .main-container {
         padding: 0rem 3rem;
+    }
+    .main-container p{
+        font-size: .7rem;
     }
 
     .footer .col-3 {
@@ -269,23 +386,28 @@ nav {
         margin: 2rem 0rem;
         flex-direction: row !important;
     }
+
     .get-started {
         padding: 2rem 3rem;
     }
-    .get-started .col-4 h5{
-       font-size: 1rem;
+
+    .get-started .col-4 h5 {
+        font-size: 1rem;
     }
+
     .trainer-img {
         height: 10rem;
     }
-    .tr{
+
+    .tr {
         font-size: 1rem;
     }
-    .trainer p{
+
+    .trainer p {
         font-size: .8rem;
         color: #949393;
     }
-    
+
 
 }
 
@@ -293,6 +415,11 @@ nav {
 
 @media only screen and (max-width: 600px) {
 
+    .new span {
+        font-size: .8rem !important;
+        padding: 0.1rem 0.8rem !important;
+        margin-right: 0.5rem !important;
+    }
     nav {
         padding: 2rem 2rem !important;
     }
@@ -319,6 +446,7 @@ nav {
     }
 
     .timeandcal {
+
         margin: 1rem 0rem;
     }
 
@@ -352,31 +480,65 @@ nav {
         width: 100%;
         bottom: -2rem;
     }
-    .category .justify-content-between h2{
+
+    .category .justify-content-between h2 {
         font-size: 1rem;
     }
+
     .get-started {
-        padding: 2rem ;
+        padding: 2rem;
     }
+
     .get-started h1 {
         font-size: 3rem;
     }
+
     .trainer-img {
         height: 6rem;
     }
-    .trainer .text-center{
+
+    .trainer .text-center {
         padding: .5rem 0rem !important;
     }
-    .tr {
+
+    .tr{
         font-size: .5rem;
     }
+    .listing .d-flex h5 {
+        font-size: .9rem;
+    }
+
     .trainer p {
         font-size: .4rem;
     }
-   
+    .new {
+        width: 18rem;
+    }
+    .heading-2 {
+        width: 20rem;
+    }
+    .timeandcal img {
+        left: 41%;
+        top:11%;
+        width: 65%;
+    }
+    .get-started .ui-btn h5 {
+        line-height: 1.3rem;
+        font-size: .8rem;
+    }
+    .listing .d-flex h1 {
+        font-size: 1.5rem !important;
+    }
+    
 }
 
 @media only screen and (max-width: 450px) {
+    .category .justify-content-between {
+        padding-bottom: 0rem !important;
+    }
+    .timeandcal h1 {
+        font-size: 2rem;
+    }
     nav {
         padding: 1rem !important;
     }
@@ -425,30 +587,63 @@ nav {
     .heading-2 {
         width: 18rem;
     }
+
     .category .gap-5 {
-        margin: 2.5rem 0rem ;
+        margin: 2rem 0rem;
     }
+
     .category .col-sm-3 h2 {
         font-size: .6rem;
         padding: 0rem 0rem .3rem 0rem !important;
     }
+
     .get-started {
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
+
     .get-started h1 {
         font-size: 2rem;
+    }
+    .ui-btn button {
+        padding: 0.4rem 0.5rem;
+        width: 6rem;
+        font-size: .7rem;
+    }
+    .get-started .ui-btn button{
+        margin-top: .5rem !important;
+    }
+    .get-started .ui-btn h5 {
+        line-height: 1rem;
+        font-size: .6rem;
+    }
+    .listing .d-flex h1 {
+        font-size: 1.3rem !important;
+        margin-bottom: .2rem !important;
+    }
+    .listing .d-flex h5 {
+        font-size: .7rem;
+    }
+    .col-6 {
+        width: 58% !important;
     }
     .get-started .col-4 h5 {
         font-size: .6rem;
     }
-     .get-started .col-4 button{
+    .listing {
+        padding: 1rem 2rem !important;
+    }
+    .listing .d-flex {
+        padding: 2rem 0rem !important;
+    }
+    .get-started .col-4 button {
         padding: 0.3rem 0.5rem;
         width: 6rem;
         margin-top: 1rem !important;
         font-size: .7rem;
-     }
+    }
+
     .footer .col-3 {
-        width: 38%;
+        width: 50%;
     }
 
     .footer .col-3 h2 {
