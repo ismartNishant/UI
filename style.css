@@ -200,7 +200,7 @@ nav {
         padding: 1rem 0rem;
     }
     .timeandcal{
-        margin: 1.5rem 0rem 1rem 0rem;
+        margin: 1rem 0rem ;
     }
 }
 
@@ -224,7 +224,7 @@ nav {
     }
    
     .new {
-        width: 16rem;
+        width: 18rem;
     }
     .hero .rounded-pill{
         font-size: .8rem;
@@ -240,10 +240,10 @@ nav {
     }
     
     .main-container p {
-        font-size: .6rem;
+        font-size: .7rem;
     }
     .heading-2 {
-        width: 10rem;
+        width: 18rem;
     }
     .footer .col-3 h2{
         font-size: .8rem;
