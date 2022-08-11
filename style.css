@@ -539,6 +539,11 @@ nav {
     .timeandcal h1 {
         font-size: 2rem;
     }
+    .timeandcal img {
+        left: 3%;
+        top: 4%;
+        width: 100%;
+    }
     nav {
         padding: 1rem !important;
     }
