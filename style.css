@@ -24,7 +24,9 @@ body {
     background-color: var(--bg);
     color: var(--text-clr);
 }
-
+/* ==========================
+        navbar css
+============================= */
 nav {
     color: var(--bg) !important;
     padding: 3rem 6rem !important;
@@ -172,7 +174,6 @@ nav {
 .trainer-img {
     height: 20rem;
     object-fit: cover;
-
 }
 
 .trainer img {
@@ -180,7 +181,6 @@ nav {
     height: 100%;
     object-fit: cover;
 }
-
 
 .listing {
     padding: 0rem 10rem;
@@ -205,7 +205,6 @@ nav {
 .footer .mb-5 {
     letter-spacing: 2px;
 }
-
 
 @media only screen and (max-width: 1100px) {
     .main-container {
@@ -264,7 +263,6 @@ nav {
 }
 
 @media only screen and (max-width: 950px) {
-
     .footer .col-3 {
         width: 35%;
     }
@@ -407,7 +405,6 @@ nav {
         font-size: .8rem;
         color: #949393;
     }
-
 
 }
 
@@ -558,12 +555,6 @@ nav {
 
     .navbar-brand {
         font-size: 1.5rem;
-    }
-
-    .ui-btn button {
-        padding: 0.6rem 1rem;
-        width: 8rem;
-        font-size: .8rem;
     }
 
     .new {
